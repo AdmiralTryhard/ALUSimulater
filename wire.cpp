@@ -10,7 +10,10 @@ std::string WireObject::get_label() const {
 
 void WireObject::set(bool new_value) {
     // Implement me:
-    // 1. If new_value is my current value, do nothing and return;
+    if(new_value == value){
+        return;
+    }
+    value = new_value;
     // 2. Set the new value
     // 3. Run all actions
 }

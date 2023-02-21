@@ -10,6 +10,8 @@ void NAND(Wire A, Wire B, Wire Out) {
     WireObject* pA = A.get();
     WireObject* pB = B.get();
 
+    auto perform =[](WireObject* pA, WireObject* pB) {return !(pA && pB);};
+    Out->set(perform);
 
     // Implement me:
     // 1. Create a lambda function that sets the value of Out = !(A && B)
@@ -22,6 +24,27 @@ void NAND(Wire A, Wire B, Wire Out) {
 // combinations of NANDs.
 void NOT(Wire In, Wire Out) {
     NAND(In, In, Out);
+}
+
+void AND(Wire A, Wire B, Wire Out){
+    Wire step1;
+    NAND(A, B, step1);
+    NAND(step1, step1, Out);
+}
+
+void XOR(Wire A, Wire B, Wire Out){
+    Wire step1, step2, step3;
+    NAND(A, B, step1);
+    NAND(A, step1, step2);
+    NAND(B, step1, step3);
+    NAND(step2, step3, Out);
+}
+void OR(Wire A, Wire B, Wire Out){
+    Wire step1, step2;
+
+    NAND(A, A, step1);
+    NAND(B, B, step2);
+    NAND(step1, step2, Out);
 }
 
 // Implement me:

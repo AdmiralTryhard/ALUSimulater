@@ -7,7 +7,7 @@ void NAND(Wire A, Wire B, Wire Out);
 void NOT(Wire In, Wire Out);
 
 // Implement me:
-// 1. AND, OR, XOR, HalfAdder, FullAdder
+// 1. HalfAdder, FullAdder
 // 2. Once you have a FullAdder, write a function:
 //    void add_bits(int a, int b, int numbits)
 //    that can add two numbers together using multiple FullAdders
