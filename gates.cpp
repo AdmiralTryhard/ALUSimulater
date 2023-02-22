@@ -10,13 +10,13 @@ void NAND(Wire A, Wire B, Wire Out) {
     WireObject* pA = A.get();
     WireObject* pB = B.get();
 
-    auto perform =[](WireObject* pA, WireObject* pB) {return !(pA && pB);};
-    Out->set(perform(pA, pB));
+    auto perform = [](WireObject* pA, WireObject* pB, Wire Out) {Out->set(!(pA && pB));};
 
     // Implement me:
     // 2. Add this action to wires A and B
-    A->on_change(perform());
-    B->on_change(perform());
+   // A->on_change(perform(pA, pB, Out));
+   // B->on_change(perform(pA, pB, Out));
+
 }
 
 
