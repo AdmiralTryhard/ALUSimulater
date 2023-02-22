@@ -1,3 +1,0 @@
-C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/build/CMakeFiles/test-gates.dir
-C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/build/CMakeFiles/edit_cache.dir
-C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/build/CMakeFiles/rebuild_cache.dir
