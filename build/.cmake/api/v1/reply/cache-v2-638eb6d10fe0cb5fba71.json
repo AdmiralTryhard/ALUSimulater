@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/build"
+			"value" : "c:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "24"
+			"value" : "25"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -587,7 +587,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater"
+			"value" : "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1043,7 +1043,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files/CMake/share/cmake-3.24"
+			"value" : "C:/Program Files/CMake/share/cmake-3.25"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1291,7 +1291,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/build"
+			"value" : "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/build"
 		},
 		{
 			"name" : "alu-simulator_IS_TOP_LEVEL",
@@ -1315,7 +1315,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater"
+			"value" : "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater"
 		}
 	],
 	"kind" : "cache",

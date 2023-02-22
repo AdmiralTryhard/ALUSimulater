@@ -14,7 +14,6 @@ void NAND(Wire A, Wire B, Wire Out) {
     Out->set(perform);
 
     // Implement me:
-    // 1. Create a lambda function that sets the value of Out = !(A && B)
     // 2. Add this action to wires A and B
 }
 

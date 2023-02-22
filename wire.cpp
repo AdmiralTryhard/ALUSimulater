@@ -14,8 +14,11 @@ void WireObject::set(bool new_value) {
         return;
     }
     value = new_value;
-    // 2. Set the new value
     // 3. Run all actions
+
+    for (Action a : actions){
+        
+    }
 }
 
 bool WireObject::get() const {
@@ -24,6 +27,8 @@ bool WireObject::get() const {
 
 void WireObject::on_change(Action action) {
     // Implement me:
+    action();
+    actions.push_back(action);
     // 1. Run the action before adding it. This makes the wire value
     //    propagate as other wires are connected to it.
     // 2. Add the action to actions

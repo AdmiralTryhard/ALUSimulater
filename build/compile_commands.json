@@ -1,22 +1,22 @@
 [
 {
-  "directory": "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -Wall -Wextra -pedantic -g -std=c++17 -o CMakeFiles\\test-gates.dir\\test-gates.cpp.obj -c \"C:\\Users\\tfwhi\\OneDrive\\Desktop\\Offline Homework\\2022-2023\\ComputerArchitecture\\Midterm\\alu-simulator\\ALUSimulater\\test-gates.cpp\"",
-  "file": "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/test-gates.cpp"
+  "directory": "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -Wall -Wextra -pedantic -g -std=c++17 -o CMakeFiles\\test-gates.dir\\test-gates.cpp.obj -c C:\\Users\\Administrator\\Documents\\CppFunny\\MidtermFunny\\ALUSimulater\\test-gates.cpp",
+  "file": "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/test-gates.cpp"
 },
 {
-  "directory": "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -Wall -Wextra -pedantic -g -std=c++17 -o CMakeFiles\\test-gates.dir\\truth.cpp.obj -c \"C:\\Users\\tfwhi\\OneDrive\\Desktop\\Offline Homework\\2022-2023\\ComputerArchitecture\\Midterm\\alu-simulator\\ALUSimulater\\truth.cpp\"",
-  "file": "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/truth.cpp"
+  "directory": "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -Wall -Wextra -pedantic -g -std=c++17 -o CMakeFiles\\test-gates.dir\\truth.cpp.obj -c C:\\Users\\Administrator\\Documents\\CppFunny\\MidtermFunny\\ALUSimulater\\truth.cpp",
+  "file": "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/truth.cpp"
 },
 {
-  "directory": "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -Wall -Wextra -pedantic -g -std=c++17 -o CMakeFiles\\test-gates.dir\\gates.cpp.obj -c \"C:\\Users\\tfwhi\\OneDrive\\Desktop\\Offline Homework\\2022-2023\\ComputerArchitecture\\Midterm\\alu-simulator\\ALUSimulater\\gates.cpp\"",
-  "file": "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/gates.cpp"
+  "directory": "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -Wall -Wextra -pedantic -g -std=c++17 -o CMakeFiles\\test-gates.dir\\gates.cpp.obj -c C:\\Users\\Administrator\\Documents\\CppFunny\\MidtermFunny\\ALUSimulater\\gates.cpp",
+  "file": "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/gates.cpp"
 },
 {
-  "directory": "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -Wall -Wextra -pedantic -g -std=c++17 -o CMakeFiles\\test-gates.dir\\wire.cpp.obj -c \"C:\\Users\\tfwhi\\OneDrive\\Desktop\\Offline Homework\\2022-2023\\ComputerArchitecture\\Midterm\\alu-simulator\\ALUSimulater\\wire.cpp\"",
-  "file": "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/wire.cpp"
+  "directory": "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -Wall -Wextra -pedantic -g -std=c++17 -o CMakeFiles\\test-gates.dir\\wire.cpp.obj -c C:\\Users\\Administrator\\Documents\\CppFunny\\MidtermFunny\\ALUSimulater\\wire.cpp",
+  "file": "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/wire.cpp"
 }
 ]

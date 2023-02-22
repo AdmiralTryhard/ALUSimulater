@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater
+# Install script for directory: C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Administrator/Documents/CppFunny/MidtermFunny/ALUSimulater/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
