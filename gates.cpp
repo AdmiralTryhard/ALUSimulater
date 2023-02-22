@@ -11,10 +11,12 @@ void NAND(Wire A, Wire B, Wire Out) {
     WireObject* pB = B.get();
 
     auto perform =[](WireObject* pA, WireObject* pB) {return !(pA && pB);};
-    Out->set(perform);
+    Out->set(perform(pA, pB));
 
     // Implement me:
     // 2. Add this action to wires A and B
+    A->on_change(perform());
+    B->on_change(perform());
 }
 
 
@@ -45,6 +47,3 @@ void OR(Wire A, Wire B, Wire Out){
     NAND(B, B, step2);
     NAND(step1, step2, Out);
 }
-
-// Implement me:
-// Write the code for the rest of the gates below

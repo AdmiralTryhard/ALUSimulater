@@ -17,7 +17,7 @@ void WireObject::set(bool new_value) {
     // 3. Run all actions
 
     for (Action a : actions){
-        
+        a();
     }
 }
 
