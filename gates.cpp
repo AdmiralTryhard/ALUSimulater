@@ -7,10 +7,8 @@ void NAND(Wire A, Wire B, Wire Out) {
     // A circular reference is created if the shared_ptr to A is also
     // stored in the lambda that is given to A.on_change. To avoid this,
     // only store raw pointers A and B inside lambda functions.
-    WireObject* pA = A.get();
-    WireObject* pB = B.get();
 
-    auto perform = [](WireObject* pA, WireObject* pB, Wire Out) {Out->set(!(pA && pB));};
+    Action perform = []() {Wire A; WireObject* pA = A.get(); Wire B; WireObject* pB = B.get(); Wire Out; Out->set(!(pA && pB));};
 
     // Implement me:
     // 2. Add this action to wires A and B
