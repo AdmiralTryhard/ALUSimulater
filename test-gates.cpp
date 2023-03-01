@@ -16,15 +16,18 @@ int main() {
 
 
 void test_nand() {
+    auto F0 = make_wire("F0");
+    auto F1 = make_wire("F1");
+    auto Cin = make_wire("Cin");
+    auto Cout = make_wire("Cout");
     auto A = make_wire("A");
     auto B = make_wire("B");
     auto Out = make_wire("Out");
     auto NotA = make_wire("NotA");
+    ALU(F0, F1, A, B, Cin, Out, Cout);
 
-    NAND(A, B, Out);
-    NOT(A, NotA);
+
     std::cout << "NAND(A,B) -> Out\n";
-    print_truth_table({A, B}, {Out});
-    std::cout << "NOT(A) -> NotA\n";
-    print_truth_table({A}, {NotA});
+    print_truth_table({F0, F1, A, B, Cin}, {Out, Cout});
+
 }
