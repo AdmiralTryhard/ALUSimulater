@@ -1,6 +1,9 @@
 #include "gates.h"
 #include <iostream>
 #include <cmath>
+#include <bitset>
+#include <vector>
+#include <string>
 
 
 void NAND(Wire A, Wire B, Wire Out) {
@@ -78,6 +81,29 @@ void Logic(Wire A, Wire B, Wire D0, Wire D1, Wire D2, Wire AandB, Wire AorB, Wir
     AND(NB, D2, NotB);
 }
 
+void HalfAdder(Wire A, Wire B, Wire Sum, Wire Carry){
+    XOR(A, B, Sum);
+    AND(A, B, Carry);
+}
+
+
+void FullAdder(Wire A, Wire B, Wire Cin, Wire Sum, Wire Cout){
+    Wire FirstPreEnable = make_wire("FirstPreEnable");
+    Wire SecondPreEnable = make_wire("SecondPreEnable");
+    Wire HalfCarry1 = make_wire("HalfCarry1");
+    Wire HalfCarry2 = make_wire("HalfCarry2");
+    Wire AxB = make_wire("AxB");
+    XOR(A, B, AxB);
+    //Sum
+    XOR(AxB, Cin, Sum);
+
+    //carry out
+    AND(A, B, HalfCarry1);
+    AND(AxB, Cin, HalfCarry2);
+    OR(HalfCarry1, HalfCarry2, Cout);
+    
+}
+
 void FullAdderWithEnable(Wire Enable, Wire A, Wire B, Wire Cin, Wire Sum, Wire Cout){
     Wire FirstPreEnable = make_wire("FirstPreEnable");
     Wire SecondPreEnable = make_wire("SecondPreEnable");
@@ -128,4 +154,35 @@ void ALU(Wire F0, Wire F1, Wire A, Wire B, Wire Cin, Wire Out, Wire Cout){
     OR(ABLogic, NBorSum, Out);
 
 
+}
+int add_bits(int a, int b, int numbits){
+    int compounding_sum{0};
+    Wire Cin = make_wire("Cin");
+    Wire A = make_wire("A");
+    Wire B = make_wire("B");
+    Wire Cout = make_wire("Cout");
+    Wire Sum = make_wire("Sum");
+
+    std::vector<bool> a_bits(numbits), b_bits(numbits), total_bits(numbits + 1);
+    for(int i = 0; i < numbits; i++){
+        bool bit_a = (a >> i) & 1; // extract the ith bit
+        bool bit_b = (b >> i) & 1;
+        a_bits.at(i) = bit_a;
+        std::cout << "\n This is what A is right now " << bit_a << '\n';
+        b_bits.at(i) = bit_b;
+        A->set(bit_a);
+        B->set(bit_b);
+        Cin->set(Cout->get());
+        FullAdder(A, B, Cin, Sum, Cout);
+        total_bits.at(i) = Sum->get();
+        if(total_bits.at(i)){
+        compounding_sum += std::pow(2,i);
+        std::cout << "\n Here is the sum so far \n" << compounding_sum;
+        }
+    }
+    if(Cout->get()){
+        compounding_sum += std::pow(2,numbits);
+    }
+
+    return compounding_sum;
 }

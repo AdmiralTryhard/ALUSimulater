@@ -26,8 +26,10 @@ void test_nand() {
     auto NotA = make_wire("NotA");
     ALU(F0, F1, A, B, Cin, Out, Cout);
 
+    std::cout << "Here is some addition\n";
+    int added = add_bits(255, 255, 8);
 
-    std::cout << "NAND(A,B) -> Out\n";
-    print_truth_table({F0, F1, A, B, Cin}, {Out, Cout});
+    std::cout << "\n Here is the final result \n" << added <<'\n';
+
 
 }

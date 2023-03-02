@@ -194,7 +194,8 @@ CMakeFiles/test-gates.dir/gates.cpp.obj: C:/Users/tfwhi/OneDrive/Desktop/Offline
   C:/msys64/mingw64/include/c++/12.1.0/tr1/modified_bessel_func.tcc \
   C:/msys64/mingw64/include/c++/12.1.0/tr1/poly_hermite.tcc \
   C:/msys64/mingw64/include/c++/12.1.0/tr1/poly_laguerre.tcc \
-  C:/msys64/mingw64/include/c++/12.1.0/tr1/riemann_zeta.tcc
+  C:/msys64/mingw64/include/c++/12.1.0/tr1/riemann_zeta.tcc \
+  C:/msys64/mingw64/include/c++/12.1.0/bitset
 
 CMakeFiles/test-gates.dir/test-gates.cpp.obj: C:/Users/tfwhi/OneDrive/Desktop/Offline\ Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/test-gates.cpp \
   C:/Users/tfwhi/OneDrive/Desktop/Offline\ Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/gates.h \
@@ -1121,6 +1122,8 @@ C:/msys64/mingw64/include/c++/12.1.0/tr1/modified_bessel_func.tcc:
 C:/msys64/mingw64/include/c++/12.1.0/tr1/poly_hermite.tcc:
 
 C:/msys64/mingw64/include/c++/12.1.0/tr1/riemann_zeta.tcc:
+
+C:/msys64/mingw64/include/c++/12.1.0/bitset:
 
 C:/Users/tfwhi/OneDrive/Desktop/Offline\ Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/test-gates.cpp:
 
