@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\detach.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\detach.dir/objects.a @CMakeFiles\detach.dir\objects1.rsp
+C:\msys64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\detach.dir/objects.a -Wl,--no-whole-archive -o detach.exe -Wl,--out-implib,libdetach.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\detach.dir\linklibs.rsp

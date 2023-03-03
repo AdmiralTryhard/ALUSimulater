@@ -5,16 +5,7 @@
 // gates are functions that add actions to wires
 void NAND(Wire A, Wire B, Wire Out);
 void NOT(Wire In, Wire Out);
-
-// Implement me:
-// 1. HalfAdder, FullAdder
-// 2. Once you have a FullAdder, write a function:
-//    void add_bits(int a, int b, int numbits)
-//    that can add two numbers together using multiple FullAdders
-// 3. Implement Decoder, Logic, FullAdderWithEnable
-// 4. Combine the above gates to create ALU
-
-
+void NOR(Wire A, Wire B, Wire Out);
 void AND(Wire A, Wire B, Wire Out);
 void OR(Wire A, Wire B, Wire Out);
 void XOR(Wire A, Wire B, Wire Out);

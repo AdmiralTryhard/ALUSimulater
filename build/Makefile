@@ -128,12 +128,50 @@ test-gates/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test-gates.dir\build.make CMakeFiles/test-gates.dir/build
 .PHONY : test-gates/fast
 
+#=============================================================================
+# Target rules for targets named detach
+
+# Build rule for target.
+detach: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 detach
+.PHONY : detach
+
+# fast build rule for target.
+detach/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/build
+.PHONY : detach/fast
+
+detach.obj: detach.cpp.obj
+.PHONY : detach.obj
+
+# target to build an object file
+detach.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/detach.cpp.obj
+.PHONY : detach.cpp.obj
+
+detach.i: detach.cpp.i
+.PHONY : detach.i
+
+# target to preprocess a source file
+detach.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/detach.cpp.i
+.PHONY : detach.cpp.i
+
+detach.s: detach.cpp.s
+.PHONY : detach.s
+
+# target to generate assembly for a file
+detach.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/detach.cpp.s
+.PHONY : detach.cpp.s
+
 gates.obj: gates.cpp.obj
 .PHONY : gates.obj
 
 # target to build an object file
 gates.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test-gates.dir\build.make CMakeFiles/test-gates.dir/gates.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/gates.cpp.obj
 .PHONY : gates.cpp.obj
 
 gates.i: gates.cpp.i
@@ -142,6 +180,7 @@ gates.i: gates.cpp.i
 # target to preprocess a source file
 gates.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test-gates.dir\build.make CMakeFiles/test-gates.dir/gates.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/gates.cpp.i
 .PHONY : gates.cpp.i
 
 gates.s: gates.cpp.s
@@ -150,6 +189,7 @@ gates.s: gates.cpp.s
 # target to generate assembly for a file
 gates.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test-gates.dir\build.make CMakeFiles/test-gates.dir/gates.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/gates.cpp.s
 .PHONY : gates.cpp.s
 
 test-gates.obj: test-gates.cpp.obj
@@ -182,6 +222,7 @@ truth.obj: truth.cpp.obj
 # target to build an object file
 truth.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test-gates.dir\build.make CMakeFiles/test-gates.dir/truth.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/truth.cpp.obj
 .PHONY : truth.cpp.obj
 
 truth.i: truth.cpp.i
@@ -190,6 +231,7 @@ truth.i: truth.cpp.i
 # target to preprocess a source file
 truth.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test-gates.dir\build.make CMakeFiles/test-gates.dir/truth.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/truth.cpp.i
 .PHONY : truth.cpp.i
 
 truth.s: truth.cpp.s
@@ -198,6 +240,7 @@ truth.s: truth.cpp.s
 # target to generate assembly for a file
 truth.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test-gates.dir\build.make CMakeFiles/test-gates.dir/truth.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/truth.cpp.s
 .PHONY : truth.cpp.s
 
 wire.obj: wire.cpp.obj
@@ -206,6 +249,7 @@ wire.obj: wire.cpp.obj
 # target to build an object file
 wire.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test-gates.dir\build.make CMakeFiles/test-gates.dir/wire.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/wire.cpp.obj
 .PHONY : wire.cpp.obj
 
 wire.i: wire.cpp.i
@@ -214,6 +258,7 @@ wire.i: wire.cpp.i
 # target to preprocess a source file
 wire.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test-gates.dir\build.make CMakeFiles/test-gates.dir/wire.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/wire.cpp.i
 .PHONY : wire.cpp.i
 
 wire.s: wire.cpp.s
@@ -222,6 +267,7 @@ wire.s: wire.cpp.s
 # target to generate assembly for a file
 wire.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test-gates.dir\build.make CMakeFiles/test-gates.dir/wire.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\detach.dir\build.make CMakeFiles/detach.dir/wire.cpp.s
 .PHONY : wire.cpp.s
 
 # Help Target
@@ -232,7 +278,11 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... detach
 	@echo ... test-gates
+	@echo ... detach.obj
+	@echo ... detach.i
+	@echo ... detach.s
 	@echo ... gates.obj
 	@echo ... gates.i
 	@echo ... gates.s

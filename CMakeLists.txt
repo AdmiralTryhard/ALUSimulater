@@ -9,3 +9,9 @@ add_executable(test-gates
   gates.cpp
   wire.cpp
 )
+
+add_executable(detach
+  detach.cpp
+  truth.cpp
+  gates.cpp
+  wire.cpp)

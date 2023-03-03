@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,12 +31,20 @@
 					"name" : "alu-simulator",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "detach::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detach-Debug-76a91a35d3c31ab8927f.json",
+					"name" : "detach",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test-gates::@6890427a1f51a3e7e1df",

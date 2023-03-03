@@ -30,6 +30,12 @@ void NOT(Wire In, Wire Out) {
     NAND(In, In, Out);
 }
 
+void NOR(Wire A, Wire B, Wire Out){
+    Wire ORed = make_wire("ORed");
+    OR(A, B, ORed);
+    NOT(ORed, Out);
+}
+
 void AND(Wire A, Wire B, Wire Out){
     Wire step1 = make_wire("step1");
     NAND(A, B, step1);
