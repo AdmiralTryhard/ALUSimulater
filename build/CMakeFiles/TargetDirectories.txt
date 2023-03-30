@@ -1,4 +1,0 @@
-C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/build/CMakeFiles/test-gates.dir
-C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/build/CMakeFiles/detach.dir
-C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/build/CMakeFiles/edit_cache.dir
-C:/Users/tfwhi/OneDrive/Desktop/Offline Homework/2022-2023/ComputerArchitecture/Midterm/alu-simulator/ALUSimulater/build/CMakeFiles/rebuild_cache.dir
