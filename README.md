@@ -10,7 +10,7 @@ Navigate a terminal to the base directory.
 
 ```ps1
 cd build
-./(program name)
+./test-gates
 ```
 Then the simulator will begin according to the code in main.
 
