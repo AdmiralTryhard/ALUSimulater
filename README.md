@@ -12,10 +12,10 @@ Navigate a terminal to the base directory.
 cd build
 ./test-gates
 ```
-Then the simulator will begin according to the code in main.
+Then the simulator will begin according to the code in test-gates.cpp
 
 ## Testing the Simulator
-It is up to whoever writes main() to use the ALUSimulator. Here are some things you can do with it.
+It is up to whoever writes main() in test-gates.cpp to use the ALUSimulator. Here are some things you can do with it.
 
 Comparing numbers bit by bit  
 Adding Integers using ALUs stringed together in a loop.  
